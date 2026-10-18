@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "domain-threat-intelligence-scanner"
+version = "0.1.0"
+description = "Defensive public domain DNS, TLS and RDAP intelligence CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Ainny1"}]
+[project.scripts]
+domain-intel = "domain_intel.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
