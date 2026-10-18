@@ -84,3 +84,14 @@ Run only against domains you own or have authorization to assess. The tool uses 
 - [ ] Printable assessment reports
 
 MIT License.
+
+
+## Mobile dashboard (v1.0)
+
+The [interactive dashboard source](index.html) is now included as a static root page, ready for GitHub Pages. Open the HTML file in a browser or enable GitHub Pages with **Settings → Pages → Deploy from a branch → main → /(root)**.
+
+The dashboard presents a synthetic demo by default. To view real findings, run the Python scanner for a domain you are authorized to check, save its JSON output, and select **Load scanner JSON** in the dashboard. All import and visualization happens inside your browser; the dashboard does **not** perform remote scans or upload reports.
+
+**Exports:** **Download JSON** saves the current report, and **Print / Save PDF** opens your browser print dialog for a report-style page. On iPhone, use the print preview/share flow to save a PDF.
+
+**Demo note:** The demonstration addresses 192.0.2.10 and 2001:db8::10 are documentation-only examples; all demonstration observations are fictitious.
